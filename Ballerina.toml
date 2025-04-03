@@ -1,0 +1,4 @@
+[package]
+org = "gabilan"
+name = "covid19_details"
+version = "0.1.0"
