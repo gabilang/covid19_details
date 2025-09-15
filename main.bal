@@ -5,7 +5,7 @@ listener http:Listener httpDefaultListener = http:getDefaultListener();
 service /covid/status on httpDefaultListener {
     resource function get greeting() returns error|json|http:InternalServerError {
         do {
-            return "Hello, Greetings!";
+            return "Hello, World!";
         } on fail error err {
             // handle error
             return error("Not implemented", err);
