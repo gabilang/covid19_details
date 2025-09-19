@@ -1,6 +1,6 @@
 import ballerina/http;
 
-listener http:Listener httpDefaultListener = http:getDefaultListener();
+listener http:Listener httpDefaultListener = http:Listener(9090);
 
 service /covid/status on httpDefaultListener {
     resource function get greeting() returns error|json|http:InternalServerError {
