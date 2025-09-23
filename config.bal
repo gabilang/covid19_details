@@ -1,1 +1,2 @@
-configurable string greet = ?
+configurable string greet = ?;
+
