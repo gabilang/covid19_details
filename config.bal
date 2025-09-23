@@ -1,9 +1,10 @@
 configurable string greet = ?;
-configurable string status = ?;
+configurable string stat = ?;
 configurable string foo = ?;
 configurable string bar = ?;
 configurable string baz = ?;
 configurable int a = ?;
+
 
 
 
