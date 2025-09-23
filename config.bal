@@ -1,4 +1,6 @@
 configurable string greet = ?;
 configurable string status = ?;
+configurable string foo = ?;
+
 
 
