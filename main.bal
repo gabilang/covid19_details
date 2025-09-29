@@ -14,6 +14,16 @@ service /covid/status on httpDefaultListener {
         }
     }
 
+    resource function get total() returns error|json|http:InternalServerError {
+        do {
+            io:println(a);
+            return a;
+        } on fail error err {
+            // handle error
+            return error("Not implemented", err);
+        }
+    }
+
     resource function get countries() returns CovidEntry[] {
         return covidTable.toArray();
     }
