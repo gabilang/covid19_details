@@ -1,10 +1,12 @@
 import ballerina/http;
+import ballerina/io;
 
 listener http:Listener httpDefaultListener = http:getDefaultListener();
 
 service /covid/status on httpDefaultListener {
     resource function get greeting() returns error|json|http:InternalServerError {
         do {
+            io:println(a);
             return "Hello, World";
         } on fail error err {
             // handle error
