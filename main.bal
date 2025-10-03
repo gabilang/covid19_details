@@ -10,7 +10,7 @@ service /covid/status on httpDefaultListener {
             return "Hello, World";
         } on fail error err {
             // handle error
-            return error("Not implemented", err);
+            return error("Not implemented: ", err);
         }
     }
 
