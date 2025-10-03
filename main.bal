@@ -19,7 +19,6 @@ service /covid/status on httpDefaultListener {
             io:println(a);
             return a;
         } on fail error err {
-            // handle error
             return error("Not implemented", err);
         }
     }
