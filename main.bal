@@ -37,7 +37,7 @@ service /covid/status on httpDefaultListener {
         if conflictingISOs.length() > 0 {
             return {
                 body: {
-                    errmsg: string:'join(" ", "Conflicting ISO Codes:", ...conflictingISOs)
+                    errmsg: string:'join(" ", "Conflicting ISO Codes: ", ...conflictingISOs)
                 }
             };
         } else {
