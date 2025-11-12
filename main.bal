@@ -7,7 +7,7 @@ service /covid/status on httpDefaultListener {
     resource function get greeting() returns error|json|http:InternalServerError {
         do {
             io:println(a);
-            return "Hello, World";
+            return "Hello World";
         } on fail error err {
             // handle error
             return error("Not implemented: ", err);
